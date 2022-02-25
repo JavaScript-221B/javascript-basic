@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Object - 접근, 추가, 삭제
+        const superman = {
+            name : 'clark',
+            age : 33,
+        }
+
+        //접근
+        superman.name //'clark'
+        superman['age'] //33
+
+        //추가
+        superman.gender = 'male';
+        superman['hairColor'] = 'black';
+
+        //삭제
+        delete superman.hairColor;
+
+
+
+        //Object - 단축 프로퍼티
+        const name = 'clark';
+        const age = 33;
+
+        const superman = {
+            name, //name : name
+            age, //age : age
+            gender : 'male',
+        }
+
+
+
+        //Object - 프로퍼티 존재 여부 확인
+        const superman = {
+            name : 'clark',
+            age : 33
+        }
+
+        superman.birthDay; //undefined
+        'birthDay' in superman; //false
+        'age' in superman; //true
+
+
+
+        //for ... in 반복문
+        for (let key in superman) {
+            console.log(key)
+            console.log(superman[key])
+        }
+
+
+
+        //객체
+        function makeObject(name, age) {
+            return {
+                name,
+                age,
+                hobby : 'football'
+            }
+        }
+
+        const Mike = makeObject('Mike', 30);
+        console.log(Mike)
+
+        console.log("age" in Mike); //true
+        console.log("birthday" in Mike); //false
+
+
+
+        //객체 in
+        function isAdult(user) {
+            if (!('age' in user) || user.age < 20) {
+                return false;
+            }
+            return false;
+        }
+
+        const Mike = {
+            name : 'Mike',
+            age : 30
+        };
+
+        const Jane = {
+            name : 'Jane'
+        };
+
+        console.log(isAdult(Mike)) //true
+        console.log(isAdult(Jane)) //false
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
