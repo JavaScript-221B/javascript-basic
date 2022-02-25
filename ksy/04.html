@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const mathScore = prompt("수학 몇점?");
+        const engScore = prompt("영어 몇점?");
+        const result = (mathScore + engScore) / 2;
+
+        console.log(result); //4540
+
+        const mathScore = 90;
+        const engScore = 80;
+        const result = (mathScore + engScore) / 2;
+
+        console.log(result); //85
+
+
+        //prompt 입력 -> 문자형
+        //"90" + "80" = "9080"
+        //"9080" / 2 = 4540 -> 나누기 같은 표현식은 숫자형으로 자동 변환
+        //"6" / "2" = 3 -> 자동 형변환
+
+
+        //명시적 형변환
+        String(3)
+
+        Number("1234") //1234
+        Number("문자") //NaN
+        Number("true") //1
+        Number("false") //0
+
+        //Boolean
+        //false
+        //숫자 0
+        //빈 문자열 ''
+        //null
+        //undefined
+        //NaN
+        //이 외에는 모두 true
+
+
+        //주의사항
+        //Number(null) -> 0
+        //Number(undefined) -> NaN
+
+        //Boolean(0) -> false
+        //Boolean('0') -> true
+
+        //Boolean('') -> false
+        //Boolean(' ') -> true
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Array
+        let students = ['철수', '영희', '영수'];
+
+
+
+        //배열의 특징
+        //배열은 문자 뿐만 아니라, 숫자, 객체, 함수 등도 포함할 수 있음
+        let arr = [
+            '민수',
+            3,
+            false,
+            {
+                name : 'Mike',
+                age : 30,
+            },
+            function() {
+                console.log('TEST');
+            }
+        ];
+
+        
+
+        //length: 배열의 길이
+        students.length
+
+        
+
+        //push(): 배열 끝에 추가
+        let days = ['월', '화', '수'];
+        days.push('목')
+        console.log(days) //['월' '화', '수', '목']
+
+
+
+        //pop(): 배열 끝 요소 제거
+        let days = ['월', '화', '수'];
+        days.pop()
+        console.log(days) //['월', '화']
+
+
+
+        //shift, unshift: 배열 앞에 제거/추가
+        //추가
+        days.unshift('일');
+        console.log(days) //['일', '월', '화', '수'];
+
+        //제거
+        days.shift();
+        console.log(days) //['월', '화', '수'];
+
+
+
+        //반복문: for
+        let days = ['월', '화', '수'];
+        for (let index = 0; index < days.length; indexx++) {
+            console.log(days[index])
+        }
+
+
+
+        //반복문: for ... of
+        for (let day of days) {
+            console.log(day)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
