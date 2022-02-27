@@ -2,7 +2,7 @@
 
 > 참고영상
 >
-> [https://www.youtube.com/watch?v=P0FY8k916e0&list=PLZKTXPmaJk8JDicsOyY2cTcwXmBa-ZceI](https://www.youtube.com/c/코딩앙마/playlists)
+> https://www.youtube.com/playlist?list=PLZKTXPmaJk8JDicsOyY2cTcwXmBa-ZceI
 
 
 
